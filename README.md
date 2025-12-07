@@ -46,7 +46,7 @@ We utilized **IBM Qiskit** to backtest the model against major historical phase 
 ### 1. The Tale of Two Eras: 2008 vs. 2024
 *Visualizing the shift from "Deterministic Collapse" to "Quantum Bifurcation".*
 
-![2008 vs 2024 Analysis]([請在此處上傳 image_ba595c.png])
+![2008 vs 2024 Analysis](<img width="1489" height="590" alt="2008_2024_chart" src="https://github.com/user-attachments/assets/9ad3e7dc-036b-4f66-bb9a-b3edbcc5656c" />)
 
 * **2008 (Financial Crisis):** A single dominant collapse state (`000001`). The world was "coherent" in its failure.
 * **2024 (AI Singularity):** The graph splits into two distinct peaks. This visualizes a **"Bifurcated Reality"**—a world splitting into parallel operating systems. This is the "Topology" of our current chaos.
@@ -54,7 +54,8 @@ We utilized **IBM Qiskit** to backtest the model against major historical phase 
 ### 2. Sensitivity Test: The "What-If" of COVID-19
 *Simulating parallel universes to verify model sensitivity.*
 
-![COVID-19 Scenarios]([請在此處上傳 image_ba4e73.png])
+![COVID-19 Scenarios](<img width="1790" height="489" alt="covid_chart png" src="https://github.com/user-attachments/assets/5751299f-b29c-4af2-9c05-d758de4769e9" />)
+
 
 * **Universe A (History):** The model correctly predicted the confusion of 2020 (`101011`) with **69.0%** probability.
 * **Universe B & C (Counterfactuals):** When we altered the "Lockdown" or "Supply Chain" parameters, the quantum state shifted significantly. This proves the model is not memorizing history, but calculating **causality**.
