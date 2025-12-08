@@ -41,14 +41,30 @@ To validate the discriminative power of this model, we simulated two distinct sc
 * **Intervention:** Introducing a "Fire" element (Hexagram 30, *The Clinging*) into the key sector (Northwest/Metal).
 * **Result:** The system tension remains locked at a critical high level (**High-Energy Locking**), indicating a failure to evolve and a risk of structural collapse.
 
-## 4. Key Results
+## 4. Validation & Simulation Results: The "Effort vs. Impact" Paradox
 
-The simulation yields a definitive **"Discriminative Test"** for spatial quality:
+### Why Transformation Fails: A Quantum Topological Perspective
 
-> **Visual Proof (Run the code in `src/` to generate plot):**
-> * **Purple Curve (Water):** Demonstrates **Entropy Reduction** (Healing).
-> * **Red Line (Fire):** Demonstrates **Systemic Deadlock** (Conflict).
-> * **$\Delta H$ (Delta H):** The quantitative value of Feng Shui design.
+We modeled two distinct transformation strategies to demonstrate why "change" (Phase Rotation) does not always lead to "improvement" (Energy Minimization).
+
+Using Qiskit, we simulated the system's Hamiltonian evolution under two intervention types:
+
+1.  **🟣 The Harmony Path (Water Strategy / ☵):**
+    * **Mechanism:** Targeted intervention on specific nodes (odd indices) to create an alternating, complementary structure (Antiferromagnetic order).
+    * **Result:** The system successfully dissipates internal tension, reaching a zero-energy **Ground State**. This represents a "High Trust" environment where components complement each other.
+
+2.  **🔴 The Deadlock Path (Fire Strategy / ☲):**
+    * **Mechanism:** A brute-force approach that flips every node simultaneously.
+    * **Result:** While the system undergoes significant change, the internal structural conflict remains unresolved. The energy curve dips briefly but **rebounds to its original high-tension state**, illustrating a classic **"Transformation Deadlock"**—where immense effort yields zero structural gain.
+
+![Quantum Deadlock Simulation](./assets/quantum_deadlock_simulation.png)
+*(Figure: The divergence between effective structural adjustment (Purple) and brute-force deadlock (Red). Note how the Red path returns to high tension despite maximum intervention intensity.)*
+
+### Key Findings for Management
+
+* **Quantifiable Friction:** The vertical gap between the two curves represents the "Cost of Poor Topology."
+* **Physics of Trust:** Trust is mathematically defined here as the absence of Hamiltonian tension.
+* **Actionable Insight:** Effective leadership is not about maximizing activity (moving right on the X-axis), but about selecting the correct topological intervention (choosing the Purple path).
 
 ## 5. Applications
 
