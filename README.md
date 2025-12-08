@@ -100,4 +100,4 @@ If you use this model or code in your research, please cite the white paper:
 
 > **Kuo, A. (2025). Project IQD: A 6-Qubit Framework for Modeling Social Phase Transitions via I-Ching Binary Logic. ResearchGate. DOI: 10.13140/RG.2.2.20595.80160**
 
-[ResearchGate Link](https://dx.doi.org/10.13140/RG.2.2.20595.80160)
+[ResearchGate Link](https://dx.doi.org/10.13140/RG.2.2.24711.46245)
