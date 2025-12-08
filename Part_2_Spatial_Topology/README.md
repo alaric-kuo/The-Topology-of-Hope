@@ -80,7 +80,7 @@ This engine is not limited to architecture; it is a general-purpose **System Har
 * Python 3.8+
 * NumPy
 * Matplotlib
-* Qiskit (Optional, for quantum circuit execution)
+* Qiskit
 
 ### Running the Simulation
 Execute the main script to generate the validation plot:
