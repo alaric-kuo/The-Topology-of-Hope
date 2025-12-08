@@ -57,7 +57,7 @@ Using Qiskit, we simulated the system's Hamiltonian evolution under two interven
     * **Mechanism:** A brute-force approach that flips every node simultaneously.
     * **Result:** While the system undergoes significant change, the internal structural conflict remains unresolved. The energy curve dips briefly but **rebounds to its original high-tension state**, illustrating a classic **"Transformation Deadlock"**—where immense effort yields zero structural gain.
 
-![Quantum Deadlock Simulation](./assets/quantum_deadlock_simulation.png)
+![Quantum Deadlock Simulation](./Assets/quantum_deadlock_simulation.png)
 *(Figure: The divergence between effective structural adjustment (Purple) and brute-force deadlock (Red). Note how the Red path returns to high tension despite maximum intervention intensity.)*
 
 ### Key Findings for Management
