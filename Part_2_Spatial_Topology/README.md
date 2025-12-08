@@ -69,9 +69,9 @@ This engine is not limited to architecture; it is a general-purpose **System Har
 ### Running the Simulation
 Execute the main script to generate the validation plot:
 
+## 7. Author
+## Dr. Ham-Jung (Alaric) Kuo Trust System Designer | CEO, A&J Management Consulting
 ```bash
 cd Part_2_Spatial_Topology/src
 python quantum_fengshui_engine.py
 
-## 7. Author
-## Dr. Ham-Jung (Alaric) Kuo Trust System Designer | CEO, A&J Management Consulting
