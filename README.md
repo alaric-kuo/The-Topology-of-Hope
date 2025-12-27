@@ -209,7 +209,7 @@ Using Qiskit, we simulated the system's Hamiltonian evolution under two interven
 * **Result:** While the system undergoes significant change, the internal structural conflict remains unresolved. The energy curve dips briefly but **rebounds to its original high-tension state**, illustrating a classic **"Transformation Deadlock"**—where immense effort yields zero structural gain.
 
 
-<img width="100%" alt="quantum_deadlock_simulation.png" src="https://github.com/alaric-kuo/The-Topology-of-Hope/blob/main/Part_2_Spatial_Topology/Assets/" />
+<img width="100%" alt="quantum_deadlock_simulation.png" src="https://github.com/alaric-kuo/The-Topology-of-Hope/blob/main/Part_2_Spatial_Topology/Assets/quantum_deadlock_simulation.png" />
 *(Figure: The divergence between effective structural adjustment (Purple) and brute-force deadlock (Red). Note how the Red path returns to high tension despite maximum intervention intensity.)*
 
 ### Key Findings for Management
