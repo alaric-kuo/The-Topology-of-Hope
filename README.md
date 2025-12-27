@@ -29,8 +29,13 @@ python IQD_Protocol_Source/iqd_valve.py
 ### Project IQD (I-Ching Quantum Dynamics): A 6-Qubit Framework for Modeling Social Phase Transitions
 ### (基於六量子位元的社會相變建模架構)
 
+<div align="center">
+
 ![Global Premiere](https://img.shields.io/badge/Global%20Premiere-World's%20First%20I--Ching%20Quantum%20Model-bf00ff?style=for-the-badge)
-![Qiskit](https://img.shields.io/badge/Quantum-Qiskit-blueviolet) ![System](https://img.shields.io/badge/System-Complexity%20Science-orange) ![Status](https://img.shields.io/badge/Status-Research%20MVP-green)
+
+![Qiskit](https://img.shields.io/badge/Quantum-Qiskit-blueviolet?style=for-the-badge) ![System](https://img.shields.io/badge/System-Complexity%20Science-orange?style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Research%20MVP-green?style=for-the-badge)
+
+</div>
 
 > **"This is not fortune-telling. This is the geometry of our will to live."**
 > **「這不是算命。這是我們求生意志的幾何學。」**
