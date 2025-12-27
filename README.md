@@ -1,4 +1,3 @@
-```markdown
 # The Topology of Hope (希望的拓樸學)
 ### Project IQD: I-Ching Quantum Dynamics Protocol
 > "Where Ancient Wisdom (Water) Grounds AI Intelligence (Fire)."
