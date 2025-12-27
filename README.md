@@ -121,6 +121,7 @@ qc.measure_all()
 simulator = AerSimulator()
 job = simulator.run(transpile(qc, simulator), shots=5000)
 print("Simulation Result:", job.result().get_counts())
+```
 
 ## 🔗 Citation
 If you use this model or code in your research, please cite the white paper:
@@ -221,4 +222,4 @@ Execute the main script to generate the validation plot:
 ```bash
 cd Part_2_Spatial_Topology/src
 python quantum_fengshui_engine.py
-
+```
