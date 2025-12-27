@@ -33,14 +33,11 @@ python IQD_Protocol_Source/iqd_valve.py
 
 ### Project IQD (I-Ching Quantum Dynamics): A 6-Qubit Framework for Modeling Social Phase Transitions
 
-### (基於六量子位元的社會相變建模架構)
-
 <div align="center">
 
 </div>
 
 > **"This is not fortune-telling. This is the geometry of our will to live."**
-> **「這不是算命。這是我們求生意志的幾何學。」**
 > — Dr. Alaric Kuo, Creator of The Topology of Hope
 
 ---
@@ -64,7 +61,7 @@ Through the lens of **Quantum Mechanics** and the ancient binary wisdom of the *
 Unlike traditional linear models, we treat social structures as quantum states:
 
 1. **The Qubit-Yao Mapping:**
-* **Hexagram (卦象)** = **6-Qubit Circuit** ( to ).
+* **Hexagram** = **6-Qubit Circuit** ( to ).
 * **Yang (—)** = State  (Energy/Expansion).
 * **Yin (-- )** = State  (Matter/Collapse).
 
