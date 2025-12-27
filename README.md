@@ -27,6 +27,7 @@ python IQD_Protocol_Source/iqd_valve.py
 # The Topology of Hope (希望的拓樸學)
 ### Project IQD (I-Ching Quantum Dynamics): A 6-Qubit Framework for Modeling Social Phase Transitions
 ### (基於六量子位元的社會相變建模架構)
+```
 
 ![Global Premiere](https://img.shields.io/badge/Global%20Premiere-World's%20First%20I--Ching%20Quantum%20Model-bf00ff?style=for-the-badge)
 ![Qiskit](https://img.shields.io/badge/Quantum-Qiskit-blueviolet) ![System](https://img.shields.io/badge/System-Complexity%20Science-orange) ![Status](https://img.shields.io/badge/Status-Research%20MVP-green)
