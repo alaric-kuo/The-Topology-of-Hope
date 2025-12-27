@@ -1,0 +1,425 @@
+{
+  "protocol_info": {
+    "name": "Project IQD Core Manifest",
+    "version": "2.1-Bilingual-Tuned",
+    "type": "Logic_Grounding_Protocol"
+  },
+  "dimensions": {
+    "q5": {
+      "name_cn": "靈 (Alignment)",
+      "pos_def": "Clear original purpose, high ethical alignment, selfless intent. 初衷, 良知, 正當性, 利他.",
+      "neg_def": "Lost purpose, selfish intent, unethical behavior, chaos. 私心, 惡意, 混亂, 失序."
+    },
+    "q4": {
+      "name_cn": "天 (Protocol)",
+      "pos_def": "Compliance with regulations, clear timing, legal approval. 合法, 合規, 時機正確, 制度支持.",
+      "neg_def": "Illegal, violation of rules, bad timing, banned. 非法, 違規, 時機錯誤, 違禁."
+    },
+    "q3": {
+      "name_cn": "心 (Cognition)",
+      "pos_def": "Clear logic, stable psychology, strategic wisdom. 邏輯清晰, 冷靜, 智慧, 策略明確.",
+      "neg_def": "Emotional instability, panic, logical fallacy, confusion. 恐慌, 混亂, 邏輯錯誤, 焦慮."
+    },
+    "q2": {
+      "name_cn": "人 (Agency)",
+      "pos_def": "Strong leadership, capable team, high credibility, synergy. 領導力, 強大團隊, 信任, 執行力, 默契.",
+      "neg_def": "Weak leadership, no team, distrust, laziness. 團隊渙散, 無能, 不信任, 懶惰."
+    },
+    "q1": {
+      "name_cn": "地 (Resource)",
+      "pos_def": "Abundant capital, sufficient budget, wealthy, hardware ready. 資金充足, 有錢, 預算夠, 資源豐富.",
+      "neg_def": "No money, bankruptcy, poverty, budget cut, deficit. 沒錢, 破產, 預算被砍, 貧窮, 負債."
+    },
+    "q0": {
+      "name_cn": "身 (Physics)",
+      "pos_def": "Feasible hardware implementation, physically possible, realistic. 技術可行, 物理可行, 健康, 實踐.",
+      "neg_def": "Physically impossible, fantasy, hardware limitation, unreal. 不可能, 幻想, 技術瓶頸, 過勞."
+    }
+  },
+  "states": {
+    "111111": {
+      "u": "䷀",
+      "name": "乾 (The Creative)",
+      "vector": "Superconductive system running at maximum voltage without resistance",
+      "audit": "High_Energy_Conduction"
+    },
+    "000000": {
+      "u": "䷁",
+      "name": "坤 (The Receptive)",
+      "vector": "High density mass foundation absorbing all physical feedback",
+      "audit": "Mass_Absorption_Base"
+    },
+    "010001": {
+      "u": "䷂",
+      "name": "屯 (Difficulty at the Beginning)",
+      "vector": "Initial potential energy accumulation amidst chaotic structural resistance",
+      "audit": "Startup_Obstacle_Point"
+    },
+    "100010": {
+      "u": "䷃",
+      "name": "蒙 (Youthful Folly)",
+      "vector": "System entropy requires strict rules to define boundaries",
+      "audit": "Regulation_Correction_Point"
+    },
+    "010111": {
+      "u": "䷄",
+      "name": "需 (Waiting)",
+      "vector": "Strategic waiting for external potential energy to drop",
+      "audit": "Strategic_Holding_Area"
+    },
+    "111010": {
+      "u": "䷅",
+      "name": "訟 (Conflict)",
+      "vector": "Resource distribution conflict causing structural stress and friction",
+      "audit": "Legal_Boundary_Clash"
+    },
+    "000010": {
+      "u": "䷆",
+      "name": "師 (The Army)",
+      "vector": "Organized collective force mobilizing under strict centralized command",
+      "audit": "Organizational_Efficiency_Node"
+    },
+    "010000": {
+      "u": "䷇",
+      "name": "比 (Holding Together)",
+      "vector": "Cross domain coupling establishing deep symbiotic ecosystem alliance",
+      "audit": "Ecological_Alliance_Link"
+    },
+    "110111": {
+      "u": "䷈",
+      "name": "小畜 (The Taming Power of the Small)",
+      "vector": "Accumulating small energy increments for non linear optimization",
+      "audit": "Local_Optimization_Step"
+    },
+    "111011": {
+      "u": "䷉",
+      "name": "履 (Treading)",
+      "vector": "Operating on critical risk boundaries following strict protocols",
+      "audit": "Standard_Compliance_Check"
+    },
+    "000111": {
+      "u": "䷊",
+      "name": "泰 (Peace)",
+      "vector": "Perfect equilibrium flow between high and low potentials",
+      "audit": "Ideal_Steady_State"
+    },
+    "111000": {
+      "u": "䷋",
+      "name": "否 (Standstill)",
+      "vector": "Communication breakdown triggering immediate system isolation and protection",
+      "audit": "System_Blockage_Alert"
+    },
+    "111101": {
+      "u": "䷌",
+      "name": "同人 (Fellowship with Men)",
+      "vector": "Seeking maximum consensus algorithm through open ethical collaboration",
+      "audit": "Common_Denominator_Search"
+    },
+    "101111": {
+      "u": "䷍",
+      "name": "大有 (Possession in Great Measure)",
+      "vector": "Maximum resource abundance outputting optimal value to public",
+      "audit": "Value_Maximization_Peak"
+    },
+    "000100": {
+      "u": "䷎",
+      "name": "謙 (Modesty)",
+      "vector": "Reducing internal resistance to minimize external friction stress",
+      "audit": "Resistance_Minimization_Mode"
+    },
+    "001000": {
+      "u": "䷏",
+      "name": "豫 (Enthusiasm)",
+      "vector": "Resonant frequency activation triggering kinetic energy burst response",
+      "audit": "Incentive_Activation_Trigger"
+    },
+    "011001": {
+      "u": "䷐",
+      "name": "隨 (Following)",
+      "vector": "Adaptive dynamic tracking of external environmental trend changes",
+      "audit": "Adaptive_Evolution_Sync"
+    },
+    "100110": {
+      "u": "䷑",
+      "name": "蠱 (Work on what has been spoiled)",
+      "vector": "Debugging corrupt logical sectors to restore structural integrity",
+      "audit": "System_Debug_Process"
+    },
+    "000011": {
+      "u": "䷒",
+      "name": "臨 (Approach)",
+      "vector": "Rising energy level requiring full spectrum monitoring implementation",
+      "audit": "Energy_Level_Monitor"
+    },
+    "110000": {
+      "u": "䷓",
+      "name": "觀 (Contemplation)",
+      "vector": "High level visualization establishing global brand authority trust",
+      "audit": "Brand_Manifestation_View"
+    },
+    "101001": {
+      "u": "䷔",
+      "name": "噬嗑 (Biting Through)",
+      "vector": "High voltage pulse clearing obstacles to enforce execution",
+      "audit": "Obstacle_Breakthrough_Force"
+    },
+    "100101": {
+      "u": "䷕",
+      "name": "賁 (Grace)",
+      "vector": "Optimizing user interface layer for better signal reception",
+      "audit": "Interface_Beautification_Layer"
+    },
+    "100000": {
+      "u": "䷖",
+      "name": "剝 (Splitting Apart)",
+      "vector": "Critical erosion of resource base requiring asset protection",
+      "audit": "Resource_Depletion_Alert"
+    },
+    "000001": {
+      "u": "䷗",
+      "name": "復 (Return)",
+      "vector": "Rebooting system from singularity point to restore purpose",
+      "audit": "Singularity_Rebirth_Point"
+    },
+    "111001": {
+      "u": "䷘",
+      "name": "無妄 (Innocence)",
+      "vector": "Calibrating data integrity by removing subjective noise bias",
+      "audit": "Objective_Data_Calibration"
+    },
+    "100111": {
+      "u": "䷙",
+      "name": "大畜 (The Taming Power of the Great)",
+      "vector": "Accumulating significant capital potential for future governance scale",
+      "audit": "Capital_Accumulation_Node"
+    },
+    "100001": {
+      "u": "䷚",
+      "name": "頤 (The Corners of the Mouth)",
+      "vector": "Maintaining ecosystem nutrient cycle for sustainable energy supply",
+      "audit": "Ecosystem_Loop_Maintenance"
+    },
+    "011110": {
+      "u": "䷛",
+      "name": "大過 (Preponderance of the Great)",
+      "vector": "Structural stress exceeding yield point requiring immediate breakthrough",
+      "audit": "Stress_Limit_Warning"
+    },
+    "010010": {
+      "u": "䷜",
+      "name": "坎 (The Abysmal)",
+      "vector": "Navigating high risk flow dynamics through trust penetration",
+      "audit": "Risk_Traversal_Path"
+    },
+    "101101": {
+      "u": "䷝",
+      "name": "離 (The Clinging)",
+      "vector": "Radiating civilization will power to illuminate systemic darkness",
+      "audit": "Willpower_Radiation_Core"
+    },
+    "011100": {
+      "u": "䷞",
+      "name": "咸 (Influence)",
+      "vector": "Rapid psychological coupling through sensitive cross domain induction",
+      "audit": "Cross_Domain_Induction"
+    },
+    "001110": {
+      "u": "䷟",
+      "name": "恆 (Duration)",
+      "vector": "Maintaining constant frequency for long term operational consistency",
+      "audit": "Operation_Continuity_Check"
+    },
+    "111100": {
+      "u": "䷠",
+      "name": "遁 (Retreat)",
+      "vector": "Strategic withdrawal of assets to preserve core viability",
+      "audit": "Risk_Evasion_Strategy"
+    },
+    "001111": {
+      "u": "䷡",
+      "name": "大壯 (The Power of the Great)",
+      "vector": "Controlling kinetic momentum to prevent system overshoot damage",
+      "audit": "Overexpansion_Brake_Control"
+    },
+    "101000": {
+      "u": "䷢",
+      "name": "晉 (Progress)",
+      "vector": "Accelerating efficiency approval through institutional recognition and promotion",
+      "audit": "Efficiency_Approval_Boost"
+    },
+    "000101": {
+      "u": "䷣",
+      "name": "明夷 (Darkening of the Light)",
+      "vector": "Preserving core fire while buffering extreme external pressure",
+      "audit": "Pressure_Incubation_Mode"
+    },
+    "110101": {
+      "u": "䷤",
+      "name": "家人 (The Family)",
+      "vector": "Stabilizing internal team architecture through ethical centripetal force",
+      "audit": "Organization_Cohesion_Lock"
+    },
+    "101011": {
+      "u": "䷥",
+      "name": "睽 (Opposition)",
+      "vector": "Managing conflicting interests to find balance in divergence",
+      "audit": "Conflict_Interest_Balance"
+    },
+    "010100": {
+      "u": "䷦",
+      "name": "蹇 (Obstruction)",
+      "vector": "Execution bottleneck detected stop forcing and seek assistance",
+      "audit": "Execution_Block_Halt"
+    },
+    "001010": {
+      "u": "䷧",
+      "name": "解 (Deliverance)",
+      "vector": "Releasing accumulated system tension to restore normal flow",
+      "audit": "Tension_Release_Valve"
+    },
+    "100011": {
+      "u": "䷨",
+      "name": "損 (Decrease)",
+      "vector": "Optimizing workflow by reducing redundancy for efficiency gain",
+      "audit": "Cost_Optimization_Cut"
+    },
+    "110001": {
+      "u": "䷩",
+      "name": "益 (Increase)",
+      "vector": "Positive feedback loop generating mutual value expansion cycle",
+      "audit": "Value_Gain_Amplifier"
+    },
+    "011111": {
+      "u": "䷪",
+      "name": "夬 (Break-through)",
+      "vector": "Decisive execution to cut off final remaining obstacle",
+      "audit": "Decisive_Action_Cut"
+    },
+    "111110": {
+      "u": "䷫",
+      "name": "姤 (Coming to Meet)",
+      "vector": "Sudden variable coupling detected warning of system instability",
+      "audit": "Sudden_Perturbation_Alert"
+    },
+    "011000": {
+      "u": "䷬",
+      "name": "萃 (Gathering Together)",
+      "vector": "Converging resources to establish a central capital platform",
+      "audit": "Resource_Centralization_Hub"
+    },
+    "000110": {
+      "u": "䷭",
+      "name": "升 (Pushing Upward)",
+      "vector": "Escalating authority level through stable stepwise vertical ascent",
+      "audit": "Stable_Ascension_Path"
+    },
+    "011010": {
+      "u": "䷮",
+      "name": "困 (Oppression)",
+      "vector": "Energy exhaustion state requiring strict ethical survival mode",
+      "audit": "Resource_Exhaustion_Limit"
+    },
+    "010110": {
+      "u": "䷯",
+      "name": "井 (The Well)",
+      "vector": "Deep infrastructure development to secure fundamental resource supply",
+      "audit": "Infrastructure_Supply_Base"
+    },
+    "011101": {
+      "u": "䷰",
+      "name": "革 (Revolution)",
+      "vector": "Reconstructing system architecture for complete paradigm shift update",
+      "audit": "Structural_Update_Patch"
+    },
+    "101110": {
+      "u": "䷱",
+      "name": "鼎 (The Cauldron)",
+      "vector": "Establishing tripartite governance structure for stable long term rule",
+      "audit": "Governance_Stability_Triad"
+    },
+    "001001": {
+      "u": "䷲",
+      "name": "震 (The Arousing)",
+      "vector": "High alert defensive protocol triggered by shock impulse",
+      "audit": "Shock_Impulse_Alarm"
+    },
+    "100100": {
+      "u": "䷳",
+      "name": "艮 (Keeping Still)",
+      "vector": "Enforcing strict boundary limits to stop unauthorized expansion",
+      "audit": "Boundary_Limit_Stop"
+    },
+    "110100": {
+      "u": "䷴",
+      "name": "漸 (Development)",
+      "vector": "Sequential progress following ordered staircase path to target",
+      "audit": "Gradual_Progress_Step"
+    },
+    "001011": {
+      "u": "䷵",
+      "name": "歸妹 (The Marrying Maiden)",
+      "vector": "Correcting procedural sequence error to prevent operational failure",
+      "audit": "Process_Risk_Correction"
+    },
+    "001101": {
+      "u": "䷶",
+      "name": "豐 (Abundance)",
+      "vector": "Peak performance output yielding maximum profit before decline",
+      "audit": "Peak_Return_Yield"
+    },
+    "101100": {
+      "u": "䷷",
+      "name": "旅 (The Wanderer)",
+      "vector": "Dynamic adaptation to unstable environment with lightweight assets",
+      "audit": "Dynamic_Adaptation_Mode"
+    },
+    "110110": {
+      "u": "䷸",
+      "name": "巽 (The Gentle)",
+      "vector": "Deep pervasive penetration of core concepts into system",
+      "audit": "Global_Penetration_Wave"
+    },
+    "011011": {
+      "u": "䷹",
+      "name": "兌 (The Joyous)",
+      "vector": "Harmonious communication protocol achieving rapid consensus data exchange",
+      "audit": "Harmonious_Comm_Link"
+    },
+    "110010": {
+      "u": "䷺",
+      "name": "渙 (Dispersion)",
+      "vector": "Dissolving rigid structures to reorganize blocked energy flow",
+      "audit": "Blockage_Dissolution_Flow"
+    },
+    "010011": {
+      "u": "䷻",
+      "name": "節 (Limitation)",
+      "vector": "Flow control regulation establishing strict budgetary compliance limits",
+      "audit": "Budget_Compliance_Limit"
+    },
+    "110011": {
+      "u": "䷼",
+      "name": "中孚 (Inner Truth)",
+      "vector": "Highest trust verification confirming synchronicity of intent protocol",
+      "audit": "Trust_Contract_Verify"
+    },
+    "001100": {
+      "u": "䷽",
+      "name": "小過 (Preponderance of the Small)",
+      "vector": "Micro management focus on specific technical execution details",
+      "audit": "Technical_Patch_Fix"
+    },
+    "010101": {
+      "u": "䷾",
+      "name": "既濟 (After Completion)",
+      "vector": "Project completion state entering maintenance mode against entropy",
+      "audit": "Final_Completion_State"
+    },
+    "101010": {
+      "u": "䷿",
+      "name": "未濟 (Before Completion)",
+      "vector": "Iterative exploration restarting cycle for new potential discovery",
+      "audit": "Infinite_Iteration_Loop"
+    }
+  }
+}
