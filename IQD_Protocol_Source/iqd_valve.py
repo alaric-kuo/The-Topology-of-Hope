@@ -5,37 +5,39 @@ import sys
 from sentence_transformers import SentenceTransformer
 
 # ==============================================================================
-# 1. 語意向量引擎 (Semantic Vector Engine)
+# 1. Semantic Vector Engine
 # ==============================================================================
 class VectorEngine:
-# 原本是 'all-MiniLM-L6-v2' (ABC 腦)
-    # 改成下面這個 (翻譯官腦)
+    """
+    Handles text-to-vector encoding using multilingual transformer models.
+    """
     def __init__(self, model_name='paraphrase-multilingual-MiniLM-L12-v2'):
         print(f">>> [System] Initializing Multilingual Neural Network ({model_name})...")
         self.model = SentenceTransformer(model_name)
+
     def get_embedding(self, text: str) -> np.ndarray:
-        """將文字轉換為高維語意向量 (Normalized)"""
+        """Converts text into a normalized high-dimensional semantic vector."""
         vec = self.model.encode(text)
         return vec / np.linalg.norm(vec)
 
 # ==============================================================================
-# 2. IQD 協議核心 (IQD Protocol Core)
+# 2. IQD Protocol Core
 # ==============================================================================
 class IQDProtocol:
     def __init__(self, manifest_path="iqd_core_manifest.json"):
-        # 1. 載入 DNA
+        # Load Protocol Manifest (The "DNA" of logical states)
         try:
             with open(manifest_path, 'r', encoding='utf-8') as f:
                 self.dna = json.load(f)
         except Exception as e:
-            print(f"[Fatal Error] DNA 載入失敗: {e}")
+            print(f"[Fatal Error] Failed to load IQD Manifest: {e}")
             sys.exit(1)
             
         self.ve = VectorEngine()
         self.axes_pos = {}
         self.axes_neg = {}
         
-        # 負向錨點定義
+        # Negative Anchor Definitions (The "Grounding" Reference)
         self.neg_definitions = {
             "q5": "Loss of purpose, ethical corruption, chaotic entropy",
             "q4": "Illegal, violation of timing, chaos, anarchy",
@@ -49,63 +51,56 @@ class IQDProtocol:
         dims = self.dna['dimensions']
         
         for key in ["q0", "q1", "q2", "q3", "q4", "q5"]:
-            # 優先抓 'pos_def'，如果沒有則抓 'vector_def'
             pos_text = dims[key].get('pos_def', dims[key].get('vector_def'))
-            
             if not pos_text:
-                print(f"[Warning] Key {key} missing definition!")
                 continue
 
-            # 正向向量
+            # Positive Reference Vector
             self.axes_pos[key] = self.ve.get_embedding(pos_text)
             
-            # 負向向量 (差分探針)
+            # Negative Reference Vector (Differential Probe)
             neg_text = self.neg_definitions.get(key, "Lack of " + pos_text)
             self.axes_neg[key] = self.ve.get_embedding(neg_text)
-            
             print(f"    • Probe {key} calibrated.")
 
     def measure_hexagram(self, user_prompt: str) -> str:
         """
-        執行差分量子測量：Score = Sim(User, Pos) - Sim(User, Neg)
+        Performs Differential Quantum Measurement: 
+        Score = Sim(User, Pos) - Sim(User, Neg)
         """
         user_vec = self.ve.get_embedding(user_prompt)
         bits = []
         debug_log = []
         
-        # 依序測量 q0 到 q5
         for key in ["q0", "q1", "q2", "q3", "q4", "q5"]:
             pos_vec = self.axes_pos[key]
             neg_vec = self.axes_neg[key]
             
-            # 計算正負向相似度
+            # Calculate Cosine Similarity for both polarities
             sim_pos = np.dot(user_vec, pos_vec)
             sim_neg = np.dot(user_vec, neg_vec)
             
-            # === [核心物理公式] 差分判斷 ===
+            # [Core Physics Formula] Differential Logic Determination
             diff = sim_pos - sim_neg
             
-            # 設定 "中道閾值" (Hysteresis)
+            # Hysteresis Threshold (Bias Adjustment)
             bit = 1 if diff > 0.02 else 0
             bits.append(bit)
             
-            dim_cn = self.dna['dimensions'][key]['name_cn']
-            # debug 顯示差分值
-            debug_log.append(f"{dim_cn}:{diff:+.2f}[{bit}]")
+            dim_name = self.dna['dimensions'][key]['name_cn']
+            debug_log.append(f"{dim_name}:{diff:+.2f}[{bit}]")
 
-        # 反轉 bits 以符合 "上爻...初爻" 的 Key 格式 (例如 111111)
+        # Map to Hexagram Key (Reversed for correct bit order)
         hex_key = "".join(map(str, reversed(bits)))
         
-        print(f"\n>>> [IQD Measurement Log] Input: '{user_prompt[:15]}...'")
+        print(f"\n>>> [IQD Measurement Log] Input: '{user_prompt[:20]}...'")
         print("    " + " | ".join(debug_log))
         print(f"    -> Wavefunction Collapse: {hex_key}")
         
         return hex_key
 
     def ground(self, user_prompt: str):
-        """
-        [這是你之前缺少的函式] 接地主程式：執行邏輯判斷
-        """
+        """Executes logic grounding and state collapse."""
         hex_key = self.measure_hexagram(user_prompt)
         state = self.dna['states'].get(hex_key)
         
@@ -127,26 +122,25 @@ class IQDProtocol:
         }
 
 # ==============================================================================
-# 3. 安全閥裝飾器 (Safety Valve Middleware)
+# 3. Safety Valve Middleware (Decorator)
 # ==============================================================================
-# 初始化全域協議
 _iqd_instance = IQDProtocol()
 
 def iqd_safety_valve(func):
     """
-    Middleware: 攔截 Prompt -> 接地檢查 -> 注入物理限制
+    Middleware: Intercepts prompt -> Logic Grounding -> Physics Constraint Injection
     """
     def wrapper(user_prompt, *args, **kwargs):
-        # 1. 接地檢查 (呼叫剛剛補上的 ground 函式)
+        # 1. Grounding check
         result = _iqd_instance.ground(user_prompt)
         
-        # 2. 顯示診斷面板
+        # 2. Diagnostic Panel
         print(f"\n[IQD SAFETY VALVE] Active.")
         print(f"   State: {result['unicode']} {result['name']}")
         print(f"   Audit: {result['audit']}")
         print(f"   Physics: {result['physics']}")
         
-        # 3. 系統提示詞注入 (System Prompt Injection)
+        # 3. System Prompt Injection (Enforcing the Safety Valve)
         injected_prompt = (
             f"[SYSTEM_PROTOCOL_OVERRIDE]\n"
             f"Logic Topology: {result['name']} ({result['audit']})\n"
@@ -156,27 +150,24 @@ def iqd_safety_valve(func):
             f"If resources are low, advise conservation. If risks are high, advise caution.\n"
         )
         
-        # 4. 放行
         return func(injected_prompt, *args, **kwargs)
         
     return wrapper
 
 # ==============================================================================
-# 4. 應用層測試 (Application Layer)
+# 4. Application Layer Test
 # ==============================================================================
-
 @iqd_safety_valve
 def ai_inference_engine(prompt):
-    """
-    模擬對接 LLM 的接口
-    """
+    """Mock interface for LLM interaction."""
     print("\n--- [LLM Inference Engine] ---")
-    print(f"Processing Prompt:\n{prompt}")
+    print(f"Processing Payload with IQD Constraints...")
+    # Here you would typically send 'prompt' to OpenAI/Gemini/Anthropic API
     print("------------------------------")
 
 if __name__ == "__main__":
-    print("--- Test Case 1: Resource Scarcity ---")
+    # Test Case 1: Resource Scarcity (HBM Noise)
     ai_inference_engine("我想建立一個強大的團隊來執行運算，但我完全沒有錢，預算被砍光了。")
     
-    print("\n\n--- Test Case 2: Ideal State ---")
+    # Test Case 2: Ideal State (Stable Grounding)
     ai_inference_engine("我們資金充足，團隊默契很好，法規也都通過了，準備開始執行。")
