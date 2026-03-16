@@ -60,21 +60,15 @@ Through the lens of **Quantum Mechanics** and the ancient binary wisdom of the *
 
 Unlike traditional linear models, we treat social structures as quantum states:
 
-1. **The Qubit-Yao Mapping:**
-* **Hexagram** = **6-Qubit Circuit** ( to ).
-* **Yang (—)** = State  (Energy/Expansion).
-* **Yin (-- )** = State  (Matter/Collapse).
-
-
-2. **Tension Fields (Hamiltonian):**
-* External pressures (e.g., COVID-19, Trade War) are modeled as **Rotation Gates ()**.
-* Higher tension () increases the probability of state collapse.
-
-
-3. **Entanglement (Non-locality):**
-* We use **CNOT Gates** to simulate how a decision in one node (e.g., a lockdown in China) instantaneously alters the state of a distant node (e.g., US Supply Chain), respecting the principle of quantum non-locality.
-
-
+1.  **The Qubit-Yao Mapping:**
+    * **Hexagram (卦象)** = **6-Qubit Circuit** ($q_0$ to $q_5$).
+    * **Yang (—)** = State $|0\rangle$ (Energy/Expansion).
+    * **Yin (-- )** = State $|1\rangle$ (Matter/Collapse).
+2.  **Tension Fields (Hamiltonian):**
+    * External pressures (e.g., COVID-19, Trade War) are modeled as **Rotation Gates ($R_x, R_y$)**.
+    * Higher tension ($\theta$) increases the probability of state collapse.
+3.  **Entanglement (Non-locality):**
+    * We use **CNOT Gates** to simulate how a decision in one node (e.g., a lockdown in China) instantaneously alters the state of a distant node (e.g., US Supply Chain), respecting the principle of quantum non-locality.
 
 ---
 
