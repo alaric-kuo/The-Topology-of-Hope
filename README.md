@@ -157,11 +157,11 @@ This module introduces a novel theoretical framework: **Quantum Spatial Tension 
 We propose that a physical space (or an organizational structure) can be represented as a quantum system, where "Harmony" is equivalent to the **Ground State** (lowest energy) of a Hamiltonian.
 
 | Traditional Concept (Feng Shui) | Quantum Concept (Physics) | Computational Representation |
-| --- | --- | --- |
-| **Space / Sector** | **Qubit State** | ` |
-| **Interaction (Sheng/Ke)** | **Coupling Constant ()** | Tensor Product of Pauli Matrices () |
-| **Tension / "Sha Qi"** | **Hamiltonian Energy ()** | Expectation Value $\langle \psi |
-| **Harmony / "Cang Feng"** | **Ground State** | Minimization of System Tension |
+| :--- | :--- | :--- |
+| **Space / Sector** (方位/空間) | Qubit State | $\vert q_i\rangle = \alpha\vert 0\rangle + \beta\vert 1\rangle$ |
+| **Interaction** (生剋 / Sheng-Ke) | Coupling Constant ($J_{ij}$) | Tensor Product of Pauli Matrices ($Z_i \otimes Z_j$) |
+| **Tension / "Sha Qi"** (煞氣) | Hamiltonian Energy ($H$) | Expectation Value $\langle \psi \vert H \vert \psi \rangle$ |
+| **Harmony / "Cang Feng"** (藏風聚氣)| Ground State | Minimization of System Tension $\min \langle \psi \vert H \vert \psi \rangle$ |
 
 ### The Hypothesis
 
