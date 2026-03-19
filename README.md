@@ -1,34 +1,4 @@
 # The Topology of Hope (希望的拓樸學)
-### Project IQD: I-Ching Quantum Dynamics Protocol
-> "Where Ancient Wisdom (Water) Grounds AI Intelligence (Fire)."
-
----
-
-## 🚀 The Core: IQD Safety Valve (Reverse Transmutation Circle)
-**Status:** `Active` | **Version:** `2.0` | **Core:** `iqd_valve.py`
-
-This is a **Logic Grounding Protocol** designed for LLMs.
-It utilizes **Differential Vector Probing** to map user intent onto the physical states of the 64 I-Ching Hexagrams.
-
-### Core Function: The "God Particle" Moment
-When an LLM faces a hallucinated request (e.g., *"I want to build a strong team, but I have absolutely no money"*):
-
-* **Standard AI:** "That's great! We can start with a vision..." (Hallucination / **Creative ䷀ 111111**)
-* **IQD Protocol:**
-  * `Resource (Earth): -0.03 [0]` (Detected Resource Scarcity)
-  * `Physics (Body): -0.14 [0]` (Detected Physical Impossibility)
-  * **Result:** Forced Collapse to **Kun (The Receptive ䷁ 000000)**
-  * **Mandate:** **Stop Action. Hibernate & Accumulate.**
-
-### Quick Start
-```bash
-pip install -r requirements.txt
-python IQD_Protocol_Source/iqd_valve.py
-
-```
-
----
-
 # Part 1: Temporal Topology & The Quantum Hamiltonian of I-Ching
 
 ### Project IQD (I-Ching Quantum Dynamics): A 6-Qubit Framework for Modeling Social Phase Transitions
